@@ -13,11 +13,11 @@ teasers = []
 
 urls = [f"https://binnenstebuiten.kro-ncrv.nl/terugkijken?show=1&jaar=all&page={i}" for i in range(0,92)]
 
-# List of Randomizing our request rate
+# Randomizing request rate
 
 rate = [i/10 for i in range(10)]
 
-# Iterating through the URLs
+# Iterate through the URLs
 
 for url in urls:
     page = requests.get(url)
